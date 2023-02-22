@@ -13,5 +13,5 @@ After creating your Discord Application, Create A Bot. Copy the Bot Token.
 Go to Main.py and Paste your token in TOKEN variable (Line No. 5). After that, Run main.py and you're good to go!
 
 # How to use Slash Command
-1st Command: Type '/hello' on your Discord Server, Output: Hello!
+1st Command: Type '/hello' on your Discord Server, Output: Hello!/n
 2nd Command: Type '/hello2' on your Discord Server, Output: @YOURNAME Hello!
