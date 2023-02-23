@@ -1,8 +1,9 @@
 import discord 
 from discord import app_commands
 from discord.ext import commands
+from config import TOKEN
 
-TOKEN = "" # Paste your bot token between these Quotation marks.
+# TOKEN = "" # Paste your bot token between these Quotation marks.
 
 client = commands.Bot(command_prefix='?', intents= discord.Intents.all())
 client.remove_command('help')
@@ -23,7 +24,7 @@ async def hello(interaction: discord.Interaction):
     await interaction.response.send_message('Hello!')
     ephemeral = True
 
-@client.tree.command(name='hello2') # Output: @YOURNAME Hello!
+@client.tree.command(name='hello2') # Output: {Your Name} Hello!
 async def hello(interaction: discord.Interaction):
     await interaction.response.send_message(f'{interaction.user.mention} Hello!')
     ephemeral = True
