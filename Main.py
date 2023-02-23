@@ -3,8 +3,6 @@ from discord import app_commands
 from discord.ext import commands
 from config import TOKEN
 
-# TOKEN = "" # Paste your bot token between these Quotation marks.
-
 client = commands.Bot(command_prefix='?', intents= discord.Intents.all())
 client.remove_command('help')
 
